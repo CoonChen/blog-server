@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.98.118.186:3306/chen_blog?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false
+    username: root
+    password: chen101010
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  redis:
+    host: 47.98.118.186
+    password:
+    database: 0
+    port: 6379
