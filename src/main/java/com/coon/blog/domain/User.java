@@ -1,12 +1,7 @@
 package com.coon.blog.domain;
 
-import com.coon.blog.common.base.IdEntity;
+import com.coon.blog.common.base.domain.IdEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "user")
 public class User extends IdEntity {
     private String username;
     private String password;

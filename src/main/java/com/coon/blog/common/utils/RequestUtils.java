@@ -1,6 +1,6 @@
 package com.coon.blog.common.utils;
 
-import com.coon.blog.common.base.MyUserDetails;
+import com.coon.blog.common.base.security.MyUserDetails;
 import com.google.common.collect.Maps;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

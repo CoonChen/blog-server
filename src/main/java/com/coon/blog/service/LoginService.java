@@ -48,7 +48,7 @@ public class LoginService {
         }
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
+        userRepository.insert(user);
         resultData.put("success", true);
         resultData.put("message", "注册成功！");
         return resultData;

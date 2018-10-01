@@ -1,23 +1,17 @@
-package com.coon.blog.common.base;
+package com.coon.blog.common.base.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.KeySequence;
+import com.baomidou.mybatisplus.annotation.TableId;
 import org.springframework.util.StringUtils;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
-@MappedSuperclass
+@KeySequence(value = "SEQ_ORACLE_STRING_KEY", clazz = String.class)
 public class IdEntity implements Serializable {
     private static final long serialVersionUID = -864662154371775680L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    protected String id;
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
-    }
+    @TableId(value = "id", type = IdType.AUTO)
+    private String id;
 
     public String getId() {
         return id;

@@ -1,4 +1,4 @@
-package com.coon.blog.common.base;
+package com.coon.blog.common.base.security;
 
 import com.coon.blog.domain.User;
 import com.coon.blog.repository.UserRepository;

@@ -1,6 +1,5 @@
 package com.coon.blog.web.controller;
 
-import com.coon.blog.domain.Test;
 import com.coon.blog.domain.User;
 import com.coon.blog.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,13 +31,6 @@ public class LoginController {
     @RequestMapping(value = "register")
     public Map<String,Object> register(User user) {
         return loginService.register(user);
-    }
-
-    @RequestMapping(value = "test")
-    public void test(@RequestBody Test test) {
-        Test demo = new Test();
-        demo = test;
-        System.out.println(demo);
     }
 
 }
