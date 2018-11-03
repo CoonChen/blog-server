@@ -5,11 +5,6 @@ spring:
     username: root
     password: chen101010
 
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-
   redis:
     host: localhost
     password:

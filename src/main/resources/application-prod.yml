@@ -5,13 +5,10 @@ spring:
     username: root
     password: chen101010
 
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-
   redis:
     host: 172.17.0.1
     password:
     database: 0
     port: 6379
+
+
